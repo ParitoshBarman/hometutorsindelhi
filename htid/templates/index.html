@@ -1,0 +1,1335 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<title>Home &#8211; Lessan</title>
+<style>
+    #wpbtn {
+        background-color: #00a884;
+        /* border: 2px solid #2FCCD6; */
+    }
+
+    #wpbtn:hover {
+        background-color: #2FCCD6;
+    }
+</style>
+
+<link rel='stylesheet' href="{% static 'css/reviewStyle.css' %}" media='all' />
+<link rel='stylesheet' href="{% static 'css/reviewAnimation.css' %}" media='all' />
+<link rel='stylesheet' href="{% static 'css/reviewCarousel.css' %}" media='all' />
+<!-- <link rel='stylesheet' href="{% static 'css/reviewallcss.css' %}" media='all' /> -->
+{% endblock head%}
+
+{% block body %}
+
+
+
+<section
+    class="elementor-section elementor-top-section elementor-element elementor-element-361d6c2 elementor-reverse-tablet elementor-reverse-mobile elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="361d6c2" data-element_type="section"
+    data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;tilt&quot;}">
+    <div class="elementor-background-overlay"></div>
+    <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path class="elementor-shape-fill" d="M0,6V0h1000v100L0,6z" />
+        </svg>
+    </div>
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-bc7c3b7"
+            data-id="bc7c3b7" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-311a36b elementor-invisible elementor-widget elementor-widget-jkit_heading"
+                    data-id="311a36b" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="jkit_heading.default">
+                    <div class="elementor-widget-container">
+                        <div
+                            class="jeg-elementor-kit jkit-heading  align-left align-tablet-center align-mobile- jeg_module_11__66bc806ba2b7c">
+                            <div class="heading-section-title  display-inline-block">
+                                <h1 class="heading-title">Smart <span class="style-color"><span>Learning</span></span>
+                                </h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-5d1d41a elementor-invisible elementor-widget elementor-widget-jkit_heading"
+                    data-id="5d1d41a" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="jkit_heading.default">
+                    <div class="elementor-widget-container">
+                        <div
+                            class="jeg-elementor-kit jkit-heading  align-left align-tablet-center align-mobile- jeg_module_11_1_66bc806ba32b9">
+                            <div class="heading-section-title  display-inline-block">
+                                <h2 class="heading-title">From <span class="style-color"><span>IITian</span></span>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-b0a8404 elementor-invisible elementor-widget elementor-widget-text-editor"
+                    data-id="b0a8404" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                        <style>
+                            /*! elementor - v3.21.0 - 26-05-2024 */
+                            .elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap {
+                                background-color: #69727d;
+                                color: #fff
+                            }
+
+                            .elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap {
+                                color: #69727d;
+                                border: 3px solid;
+                                background-color: transparent;
+                            }
+
+                            .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap {
+                                margin-top: 8px;
+                            }
+
+                            .elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter {
+                                width: 1em;
+                                height: 1em;
+                            }
+
+                            .elementor-widget-text-editor .elementor-drop-cap {
+                                float: left;
+                                text-align: center;
+                                line-height: 1;
+                                font-size: 50px;
+                            }
+
+                            .elementor-widget-text-editor .elementor-drop-cap-letter {
+                                display: inline-block;
+                            }
+                        </style>
+                        <p>Welcome to Home Tutors in Delhi, Delhi’s leading home tutoring service. We provide
+                            personalized and effective tutoring to help students excel academically and achieve their
+                            full potential.</p>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-0d5473f elementor-tablet-align-center elementor-invisible elementor-widget elementor-widget-button"
+                    data-id="0d5473f" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+                    <div class="elementor-widget-container" style="display: flex;flex-direction: row;gap: 30px;">
+                        <div class="elementor-button-wrapper">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" href="tel:9266133939">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">Call Now</span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="elementor-button-wrapper">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" id="wpbtn"
+                                href="https://wa.me/9266133939?text=I'm%20interested" target="_blank">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">WhatsApp Now</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-87112e8"
+            data-id="87112e8" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-e872b4a elementor-absolute elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="e872b4a" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img decoding="async" width="800" height="800" src="{% static 'img/confidentStudent.png' %}"
+                            class="attachment-large size-large wp-image-89" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-d5487c5 elementor-widget__width-initial elementor-absolute elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="d5487c5" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img decoding="async" width="184" height="181" src="{% static 'img/c3.png' %}"
+                            class="attachment-large size-large wp-image-123" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-7153de0 elementor-widget__width-initial elementor-absolute elementor-widget-tablet__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="7153de0" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="324" height="287" src="{% static 'img/edge.png' %}"
+                            class="attachment-large size-large wp-image-134" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-563d291 elementor-widget__width-initial elementor-absolute elementor-widget-tablet__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="563d291" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="195" height="196" src="{% static 'img/c1.png' %}"
+                            class="attachment-large size-large wp-image-121" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-d277c52 elementor-widget__width-initial elementor-absolute elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="d277c52" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="179" height="177" src="{% static 'img/c2.png' %}"
+                            class="attachment-large size-large wp-image-122" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-1d60013 elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="1d60013" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="800" height="800"
+                            src="{% static 'img/confidentStudent.png' %}"
+                            class="attachment-large size-large wp-image-30" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section
+    class="elementor-section elementor-top-section elementor-element elementor-element-2ee7e17 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="2ee7e17" data-element_type="section"
+    data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_bottom&quot;:&quot;tilt&quot;}">
+    <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path class="elementor-shape-fill" d="M0,6V0h1000v100L0,6z" />
+        </svg>
+    </div>
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-da84841"
+            data-id="da84841" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-c3887bb elementor-widget__width-initial elementor-absolute elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="c3887bb" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="183" height="183" src="{% static 'img/c4.png' %}"
+                            class="attachment-large size-large wp-image-124" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-d9b7694 elementor-widget__width-initial elementor-absolute elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="d9b7694" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="324" height="287" src="{% static 'img/edge2.png' %}"
+                            class="attachment-large size-large wp-image-210" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-0dbaa2b elementor-invisible elementor-widget elementor-widget-heading"
+                    data-id="0dbaa2b" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                        <style>
+                            /*! elementor - v3.21.0 - 26-05-2024 */
+                            .elementor-heading-title {
+                                padding: 0;
+                                margin: 0;
+                                line-height: 1;
+                            }
+
+                            .elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+                                color: inherit;
+                                font-size: inherit;
+                                line-height: inherit;
+                            }
+
+                            .elementor-widget-heading .elementor-heading-title.elementor-size-small {
+                                font-size: 15px;
+                            }
+
+                            .elementor-widget-heading .elementor-heading-title.elementor-size-medium {
+                                font-size: 19px;
+                            }
+
+                            .elementor-widget-heading .elementor-heading-title.elementor-size-large {
+                                font-size: 29px;
+                            }
+
+                            .elementor-widget-heading .elementor-heading-title.elementor-size-xl {
+                                font-size: 39px;
+                            }
+
+                            .elementor-widget-heading .elementor-heading-title.elementor-size-xxl {
+                                font-size: 59px;
+                            }
+                        </style>
+                        <h2 class="elementor-heading-title elementor-size-default">Our Core Values</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section
+    class="elementor-section elementor-top-section elementor-element elementor-element-331fa31 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="331fa31" data-element_type="section">
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f8d5dcf"
+            data-id="f8d5dcf" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <section
+                    class="elementor-section elementor-inner-section elementor-element elementor-element-1cb67c2 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                    data-id="1cb67c2" data-element_type="section">
+                    <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3c8e6b8 elementor-invisible"
+                            data-id="3c8e6b8" data-element_type="column"
+                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-814f8db elementor-widget elementor-widget-image"
+                                    data-id="814f8db" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="800" height="534"
+                                            src="{% static 'img/3.png' %}"
+                                            class="attachment-large size-large wp-image-171" alt="" />
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-264c6f1 elementor-widget elementor-widget-heading"
+                                    data-id="264c6f1" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h4 class="elementor-heading-title elementor-size-default">Excellence</h4>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-94a66e6 elementor-widget elementor-widget-text-editor"
+                                    data-id="94a66e6" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p>We are dedicated to maintaining the highest standards of teaching.</p>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-904b63b elementor-align-center elementor-widget elementor-widget-button"
+                                    data-id="904b63b" data-element_type="widget" data-widget_type="button.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-button-wrapper">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm"
+                                                href="#">
+                                                <span class="elementor-button-content-wrapper">
+                                                    <span class="elementor-button-text">Learn More</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-b2228f5 elementor-invisible"
+                            data-id="b2228f5" data-element_type="column"
+                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-2df6742 elementor-widget elementor-widget-image"
+                                    data-id="2df6742" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="800" height="534"
+                                            src="{% static 'img/1 (1).png' %}"
+                                            class="attachment-large size-large wp-image-172" alt="" />
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-3071557 elementor-widget elementor-widget-heading"
+                                    data-id="3071557" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h4 class="elementor-heading-title elementor-size-default">Integrity</h4>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-f2762ab elementor-widget elementor-widget-text-editor"
+                                    data-id="f2762ab" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p>We operate with transparency and ethical practices in all our dealings.</p>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-922c450 elementor-align-center elementor-widget elementor-widget-button"
+                                    data-id="922c450" data-element_type="widget" data-widget_type="button.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-button-wrapper">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm"
+                                                href="#">
+                                                <span class="elementor-button-content-wrapper">
+                                                    <span class="elementor-button-text">Learn More</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-41c5842 elementor-invisible"
+                            data-id="41c5842" data-element_type="column"
+                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-33ef541 elementor-widget elementor-widget-image"
+                                    data-id="33ef541" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="800" height="534"
+                                            src="{% static 'img/2.png' %}"
+                                            class="attachment-large size-large wp-image-173" alt="" />
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-f6e41a4 elementor-widget elementor-widget-heading"
+                                    data-id="f6e41a4" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h4 class="elementor-heading-title elementor-size-default">Commitment</h4>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-a68a117 elementor-widget elementor-widget-text-editor"
+                                    data-id="a68a117" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p>We are committed to supporting each student’s academic growth and
+                                            development.</p>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-361b2dc elementor-align-center elementor-widget elementor-widget-button"
+                                    data-id="361b2dc" data-element_type="widget" data-widget_type="button.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-button-wrapper">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm"
+                                                href="#">
+                                                <span class="elementor-button-content-wrapper">
+                                                    <span class="elementor-button-text">Learn More</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<section
+    class="elementor-section elementor-top-section elementor-element elementor-element-ae838e4 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="ae838e4" data-element_type="section"
+    data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;tilt&quot;}">
+    <div class="elementor-background-overlay"></div>
+    <div class="elementor-shape elementor-shape-top" data-negative="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path class="elementor-shape-fill" d="M0,6V0h1000v100L0,6z" />
+        </svg>
+    </div>
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-fa9f475 elementor-invisible"
+            data-id="fa9f475" data-element_type="column" data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-190a567 elementor-widget-tablet__width-auto elementor-widget elementor-widget-image"
+                    data-id="190a567" data-element_type="widget" data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="600" height="748"
+                            src="{% static 'img/aged-teacher-2021-09-24-03-26-41-utc.jpg' %}"
+                            class="attachment-large size-large wp-image-248" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-11a6a36 elementor-absolute elementor-widget elementor-widget-image"
+                    data-id="11a6a36" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="600" height="748"
+                            src="{% static 'img/mission 5.gif' %}"
+                            class="attachment-large size-large wp-image-249" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-b9aa880"
+            data-id="b9aa880" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-6c39f6e elementor-invisible elementor-widget elementor-widget-heading"
+                    data-id="6c39f6e" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Mission to Prepare Our Children’s
+                            Bright Future</h2>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-a72e5d6 elementor-widget__width-initial elementor-absolute elementor-widget-tablet__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="a72e5d6" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="324" height="287" src="{% static 'img/edge2.png' %}"
+                            class="attachment-large size-large wp-image-210" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-7c159b6 elementor-invisible elementor-widget elementor-widget-text-editor"
+                    data-id="7c159b6" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                        <p>Our mission is to prepare students for a successful future through focused academic support and holistic development.</p>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-35dce44 elementor-view-stacked elementor-position-left elementor-vertical-align-middle elementor-widget-tablet__width-auto elementor-shape-circle elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box"
+                    data-id="35dce44" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+                    <div class="elementor-widget-container">
+                        <link rel="stylesheet" href="{% static 'css/widget-icon-box-min.css' %}">
+                        <div class="elementor-icon-box-wrapper">
+
+                            <div class="elementor-icon-box-icon">
+                                <span class="elementor-icon elementor-animation-">
+                                    <!-- <i aria-hidden="true" class="fas fa-chart-line"></i> -->
+                                    <i class='fa fa-line-chart'></i>
+                                </span>
+                            </div>
+
+                            <div class="elementor-icon-box-content">
+
+                                <h3 class="elementor-icon-box-title">
+                                    <span>
+                                        Grade Improvement </span>
+                                </h3>
+
+                                <p class="elementor-icon-box-description">
+                                    Boost academic performance with personalized tutoring strategies.
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-b8abcf6 elementor-view-stacked elementor-position-left elementor-vertical-align-middle elementor-widget-tablet__width-auto elementor-shape-circle elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box"
+                    data-id="b8abcf6" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-icon-box-wrapper">
+
+                            <div class="elementor-icon-box-icon">
+                                <span class="elementor-icon elementor-animation-">
+                                    <!-- <i aria-hidden="true" class="jki jki-open-book-light"></i>  -->
+                                    <i class="fa fa-book"></i>
+                                </span>
+                            </div>
+
+                            <div class="elementor-icon-box-content">
+
+                                <h3 class="elementor-icon-box-title">
+                                    <span>
+                                        Exam Preparation </span>
+                                </h3>
+
+                                <p class="elementor-icon-box-description">
+                                    Equip students with effective study techniques and practice to excel in exams.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-d80d7e9 elementor-view-stacked elementor-position-left elementor-vertical-align-middle elementor-widget-tablet__width-auto elementor-shape-circle elementor-mobile-position-top elementor-invisible elementor-widget elementor-widget-icon-box"
+                    data-id="d80d7e9" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="icon-box.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-icon-box-wrapper">
+
+                            <div class="elementor-icon-box-icon">
+                                <span class="elementor-icon elementor-animation-">
+                                    <i aria-hidden="true" class="fa fa-users"></i> </span>
+                            </div>
+
+                            <div class="elementor-icon-box-content">
+
+                                <h3 class="elementor-icon-box-title">
+                                    <span>
+                                        Social Development </span>
+                                </h3>
+
+                                <p class="elementor-icon-box-description">
+                                    Foster skills such as critical thinking and effective communication beyond academics.</p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-a821ff6 elementor-widget__width-initial elementor-absolute elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="a821ff6" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="195" height="196" src="{% static 'img/c1.png' %}"
+                            class="attachment-large size-large wp-image-121" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section
+    class="elementor-section elementor-top-section elementor-element elementor-element-d5ca80d elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="d5ca80d" data-element_type="section"
+    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+    <div class="elementor-background-overlay"></div>
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-352adc2"
+            data-id="352adc2" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-beda70a elementor-invisible elementor-widget elementor-widget-heading"
+                    data-id="beda70a" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Our vision is every child
+                            is safe, inspired, challenged, empowered.</h2>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-a57e47f elementor-widget__width-initial elementor-absolute elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="a57e47f" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="324" height="287" src="{% static 'img/edge.png' %}"
+                            class="attachment-large size-large wp-image-134" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-0b7321a elementor-widget__width-initial elementor-absolute elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="0b7321a" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img decoding="async" width="184" height="181" src="{% static 'img/c3.png' %}"
+                            class="attachment-large size-large wp-image-123" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-aab7e96 elementor-invisible elementor-widget elementor-widget-text-editor"
+                    data-id="aab7e96" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                        <!-- <p>Integer efficitur ligula ipsum, at vulputate mi fermentum sit amet. Sed pulvinar
+                            rutrum commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                            vitae tortor nec lectus mattis congue id sed tortor.</p> -->
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-3acfbca elementor-widget__width-initial elementor-absolute elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="3acfbca" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="183" height="183" src="{% static 'img/c4.png' %}"
+                            class="attachment-large size-large wp-image-124" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-ad0cd1b elementor-align-center elementor-invisible elementor-widget elementor-widget-button"
+                    data-id="ad0cd1b" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+                    <div class="elementor-widget-container">
+                        <div class="elementor-button-wrapper">
+                            <!-- <a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">Learn More</span>
+                                </span>
+                            </a> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section
+    class="elementor-section elementor-top-section elementor-element elementor-element-8c40abb elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="8c40abb" data-element_type="section"
+    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-1bf565b"
+            data-id="1bf565b" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-23ba261 elementor-invisible elementor-widget elementor-widget-heading"
+                    data-id="23ba261" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Our Programs for
+                            excellence</h2>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-6cc7648 elementor-widget__width-initial elementor-absolute elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="6cc7648" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="195" height="196" src="{% static 'img/c1.png' %}"
+                            class="attachment-large size-large wp-image-121" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-c0693d7 elementor-widget__width-initial elementor-absolute elementor-widget-tablet__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="c0693d7" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="324" height="287" src="{% static 'img/edge2.png' %}"
+                            class="attachment-large size-large wp-image-210" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-b6905df elementor-invisible elementor-widget elementor-widget-text-editor"
+                    data-id="b6905df" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="text-editor.default">
+                    <div class="elementor-widget-container">
+                        <p>Our carefully selected tutors are highly qualified and experienced, ensuring child receives the highest quality education. We tailor our lessons to meet child’s individual learning style and academic requirements, enhancing their understanding and performance. Enjoy the flexibility of times that best fit yours routine. We prioritize a supportive and engaging learning atmosphere to help your child thrive academically and personally.</p>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-d9ff61a elementor-widget__width-initial elementor-absolute elementor-widget-tablet__width-initial elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="d9ff61a" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="179" height="177" src="{% static 'img/c2.png' %}"
+                            class="attachment-large size-large wp-image-122" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-748dd54 elementor-tablet-align-center elementor-invisible elementor-widget elementor-widget-button"
+                    data-id="748dd54" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+                    <!-- <div class="elementor-widget-container">
+                        <div class="elementor-button-wrapper">
+                            <a class="elementor-button elementor-button-link elementor-size-sm" href="#">
+                                <span class="elementor-button-content-wrapper">
+                                    <span class="elementor-button-text">Discover More</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-ddd0332"
+            data-id="ddd0332" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <section
+                    class="elementor-section elementor-inner-section elementor-element elementor-element-2240c2f elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
+                    data-id="2240c2f" data-element_type="section"
+                    data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-4c7d5d7"
+                            data-id="4c7d5d7" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-a504def elementor-widget elementor-widget-image"
+                                    data-id="a504def" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="255" height="255"
+                                            src="{% static 'img/Expert Tutors.png' %}"
+                                            class="attachment-large size-large wp-image-598" alt="" />
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-9ff5453 elementor-widget elementor-widget-heading"
+                                    data-id="9ff5453" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">Expert Tutors</h5>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-3c5083a elementor-widget elementor-widget-text-editor"
+                                    data-id="3c5083a" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p>Highly Qualified and experienced.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-3a09713"
+                            data-id="3a09713" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-4c94522 elementor-widget elementor-widget-image"
+                                    data-id="4c94522" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="255" height="255"
+                                            src="{% static 'img/Customized Learning.png' %}"
+                                            class="attachment-large size-large wp-image-597" alt="" />
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-723ebd9 elementor-widget elementor-widget-heading"
+                                    data-id="723ebd9" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">Customized Learning</h5>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-274485a elementor-widget elementor-widget-text-editor"
+                                    data-id="274485a" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p>Enhance Their Understanding and Performance.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section
+                    class="elementor-section elementor-inner-section elementor-element elementor-element-86c722f elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
+                    data-id="86c722f" data-element_type="section"
+                    data-settings="{&quot;animation&quot;:&quot;fadeInUp&quot;}">
+                    <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-e0ab024"
+                            data-id="e0ab024" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-dd40b50 elementor-widget elementor-widget-image"
+                                    data-id="dd40b50" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="255" height="255"
+                                            src="{% static 'img/Convenient Scheduling.png' %}"
+                                            class="attachment-large size-large wp-image-600" alt="" />
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-9f491c3 elementor-widget elementor-widget-heading"
+                                    data-id="9f491c3" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">Convenient Scheduling
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-40ee9ef elementor-widget elementor-widget-text-editor"
+                                    data-id="40ee9ef" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p>Flexibilty of Scheduling Classes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-7f67972"
+                            data-id="7f67972" data-element_type="column">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-element elementor-element-c2586ac elementor-widget elementor-widget-image"
+                                    data-id="c2586ac" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="255" height="255"
+                                            src="{% static 'img/Safe and Supportive Environment.png' %}"
+                                            class="attachment-large size-large wp-image-599" alt="" />
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-2d1752b elementor-widget elementor-widget-heading"
+                                    data-id="2d1752b" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">Secure Environment</h5>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-b1df59f elementor-widget elementor-widget-text-editor"
+                                    data-id="b1df59f" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p>Supportive and Engaging Atmosphere.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<section
+    class="elementor-section elementor-top-section elementor-element elementor-element-620973b elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="620973b" data-element_type="section"
+    data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;shape_divider_top&quot;:&quot;tilt&quot;,&quot;shape_divider_bottom&quot;:&quot;tilt&quot;}">
+    <div class="elementor-background-overlay"></div>
+    <div class="elementor-shape elementor-shape-top" data-negative="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path class="elementor-shape-fill" d="M0,6V0h1000v100L0,6z" />
+        </svg>
+    </div>
+    <div class="elementor-shape elementor-shape-bottom" data-negative="false">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+            <path class="elementor-shape-fill" d="M0,6V0h1000v100L0,6z" />
+        </svg>
+    </div>
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-63ca963"
+            data-id="63ca963" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <div class="elementor-element elementor-element-c68e833 elementor-invisible elementor-widget elementor-widget-heading"
+                    data-id="c68e833" data-element_type="widget"
+                    data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="heading.default">
+                    <div class="elementor-widget-container">
+                        <h2 class="elementor-heading-title elementor-size-default">Our Popular Teacher</h2>
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-1a2d1eb elementor-widget__width-initial elementor-absolute elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="1a2d1eb" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img loading="lazy" decoding="async" width="183" height="183" src="{% static 'img/c4.png' %}"
+                            class="attachment-large size-large wp-image-124" alt="" />
+                    </div>
+                </div>
+                <div class="elementor-element elementor-element-b8c50d8 elementor-widget__width-initial elementor-absolute elementor-widget-mobile__width-initial elementor-invisible elementor-widget elementor-widget-image"
+                    data-id="b8c50d8" data-element_type="widget"
+                    data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;_animation&quot;:&quot;fadeInUp&quot;}"
+                    data-widget_type="image.default">
+                    <div class="elementor-widget-container">
+                        <img decoding="async" width="184" height="181" src="{% static 'img/c3.png' %}"
+                            class="attachment-large size-large wp-image-123" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section
+    class="elementor-section elementor-top-section elementor-element elementor-element-100556a5 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+    data-id="100556a5" data-element_type="section"
+    data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6111b23c"
+            data-id="6111b23c" data-element_type="column">
+            <div class="elementor-widget-wrap elementor-element-populated">
+                <section
+                    class="elementor-section elementor-inner-section elementor-element elementor-element-26004839 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+                    data-id="26004839" data-element_type="section">
+                    <div class="elementor-container elementor-column-gap-default">
+                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-146e9342 elementor-invisible"
+                            data-id="146e9342" data-element_type="column"
+                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-background-overlay"></div>
+                                <div class="elementor-element elementor-element-132f0963 elementor-widget elementor-widget-image"
+                                    data-id="132f0963" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="800" height="800"
+                                            src="{% static 'img/pp1.jpg' %}"
+                                            class="attachment-large size-large wp-image-458" alt="" />
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-43f2c641 elementor-widget elementor-widget-heading"
+                                    data-id="43f2c641" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">Harry
+                                            Smith</h5>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-1378cfdf elementor-widget elementor-widget-heading"
+                                    data-id="1378cfdf" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">English
+                                            Teacher</h5>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-420b5d00 elementor-star-rating--align-center elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating"
+                                    data-id="420b5d00" data-element_type="widget"
+                                    data-widget_type="star-rating.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="elementor-star-rating__wrapper">
+                                            <div class="elementor-star-rating" title="5/5"
+                                                itemtype="http://schema.org/Rating" itemscope=""
+                                                itemprop="reviewRating">
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-73be68b elementor-widget elementor-widget-text-editor"
+                                    data-id="73be68b" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p> &#8221; Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Suspendisse est neque, ultrices at enim vitae, mattis consequat
+                                            dui.&#8221;</p>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-bcb9912 elementor-align-center elementor-widget elementor-widget-button"
+                                    data-id="bcb9912" data-element_type="widget" data-widget_type="button.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-button-wrapper">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm"
+                                                href="#">
+                                                <span class="elementor-button-content-wrapper">
+                                                    <span class="elementor-button-text">Contact</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-75312ae6 elementor-invisible"
+                            data-id="75312ae6" data-element_type="column"
+                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:300}">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-background-overlay"></div>
+                                <div class="elementor-element elementor-element-5ef4cd34 elementor-widget elementor-widget-image"
+                                    data-id="5ef4cd34" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="800" height="800"
+                                            src="{% static 'img/pp2.jpg' %}"
+                                            class="attachment-large size-large wp-image-459" alt="" />
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-10b7f8e1 elementor-widget elementor-widget-heading"
+                                    data-id="10b7f8e1" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">Gregory
+                                            Warren</h5>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-df30f00 elementor-widget elementor-widget-heading"
+                                    data-id="df30f00" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">Social
+                                            Teacher</h5>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-7f2cd244 elementor-star-rating--align-center elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating"
+                                    data-id="7f2cd244" data-element_type="widget"
+                                    data-widget_type="star-rating.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="elementor-star-rating__wrapper">
+                                            <div class="elementor-star-rating" title="5/5"
+                                                itemtype="http://schema.org/Rating" itemscope=""
+                                                itemprop="reviewRating">
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-948f66c elementor-widget elementor-widget-text-editor"
+                                    data-id="948f66c" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p> &#8221; Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Suspendisse est neque, ultrices at enim vitae, mattis consequat
+                                            dui.&#8221;</p>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-9e46262 elementor-align-center elementor-widget elementor-widget-button"
+                                    data-id="9e46262" data-element_type="widget" data-widget_type="button.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-button-wrapper">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm"
+                                                href="#">
+                                                <span class="elementor-button-content-wrapper">
+                                                    <span class="elementor-button-text">Contact</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7ee4f58 elementor-invisible"
+                            data-id="7ee4f58" data-element_type="column"
+                            data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;,&quot;animation_delay&quot;:600}">
+                            <div class="elementor-widget-wrap elementor-element-populated">
+                                <div class="elementor-background-overlay"></div>
+                                <div class="elementor-element elementor-element-35c51400 elementor-widget elementor-widget-image"
+                                    data-id="35c51400" data-element_type="widget" data-widget_type="image.default">
+                                    <div class="elementor-widget-container">
+                                        <img loading="lazy" decoding="async" width="800" height="800"
+                                            src="{% static 'img/pp3.jpg' %}"
+                                            class="attachment-large size-large wp-image-460" alt="" />
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-176fdc7a elementor-widget elementor-widget-heading"
+                                    data-id="176fdc7a" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">Peter
+                                            Wong</h5>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-585744ce elementor-widget elementor-widget-heading"
+                                    data-id="585744ce" data-element_type="widget" data-widget_type="heading.default">
+                                    <div class="elementor-widget-container">
+                                        <h5 class="elementor-heading-title elementor-size-default">Math
+                                            Teacher</h5>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-5bd82f42 elementor-star-rating--align-center elementor--star-style-star_fontawesome elementor-widget elementor-widget-star-rating"
+                                    data-id="5bd82f42" data-element_type="widget"
+                                    data-widget_type="star-rating.default">
+                                    <div class="elementor-widget-container">
+
+                                        <div class="elementor-star-rating__wrapper">
+                                            <div class="elementor-star-rating" title="5/5"
+                                                itemtype="http://schema.org/Rating" itemscope=""
+                                                itemprop="reviewRating">
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                                <i class="fa fa-star" style="color: #FDDC67;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-9b32772 elementor-widget elementor-widget-text-editor"
+                                    data-id="9b32772" data-element_type="widget" data-widget_type="text-editor.default">
+                                    <div class="elementor-widget-container">
+                                        <p> &#8221; Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                            Suspendisse est neque, ultrices at enim vitae, mattis consequat
+                                            dui.&#8221;</p>
+                                    </div>
+                                </div>
+                                <div class="elementor-element elementor-element-8e81219 elementor-align-center elementor-widget elementor-widget-button"
+                                    data-id="8e81219" data-element_type="widget" data-widget_type="button.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-button-wrapper">
+                                            <a class="elementor-button elementor-button-link elementor-size-sm"
+                                                href="#">
+                                                <span class="elementor-button-content-wrapper">
+                                                    <span class="elementor-button-text">Contact</span>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- <div> -->
+    <div class="slider-area">
+        <img class="slder slider-1" src="/static/img/services-shape-1.png" alt="">
+        <div class="container" style="margin: auto;">
+            <div class="row" style="text-align: center;">
+                <div class="col-lg-12">
+                    <div class="slider-title text-center ">
+                        <h2>Happy Student says About us</h2>
+                        <p>Our clients trust AASO for their healthcare needs and appreciate the high-quality care and
+                            compassionate service they receive. </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <img class="sli sli-2" src="/static/img/sheap-1.png" alt="">
+                    <div class="single-slider-active owl-carousel owl-loaded owl-drag">
+
+
+
+                        <div class="owl-stage-outer">
+                            <div class="owl-stage"
+                                style="transition: 1s; width: 3499px; transform: translate3d(-1166px, 0px, 0px);">
+                                <div class="owl-item cloned" style="width: 368.667px; margin-right: 20px;">
+                                    <div class="slider-item">
+                                        <div class="slider-content">
+                                            <i class="">”</i>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                Lorem ipsum
+                                                dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do
+                                                eiusmod Lorem ipsum dolor sit amet, </p>
+                                        </div>
+                                        <div class="slider-info">
+                                            <div class="slider-inner">
+                                                <img src="https://medics.themechampion.com/html/pharmacy/assets/img/client/man-1.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="slider-inner-text">
+                                                <h4>Lucas</h4>
+                                                <p>Oral Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 368.667px; margin-right: 20px;">
+                                    <div class="slider-item">
+                                        <div class="slider-content">
+                                            <i class="">”</i>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                Lorem ipsum
+                                                dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do
+                                                eiusmod Lorem ipsum dolor sit amet, </p>
+                                        </div>
+                                        <div class="slider-info">
+                                            <div class="slider-inner">
+                                                <img src="https://medics.themechampion.com/html/pharmacy/assets/img/client/man-2.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="slider-inner-text">
+                                                <h4>James Warm</h4>
+                                                <p>Oral Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 368.667px; margin-right: 20px;">
+                                    <div class="slider-item">
+                                        <div class="slider-content">
+                                            <i class="">”</i>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                Lorem ipsum
+                                                dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do
+                                                eiusmod Lorem ipsum dolor sit amet, </p>
+                                        </div>
+                                        <div class="slider-info">
+                                            <div class="slider-inner">
+                                                <img src="https://medics.themechampion.com/html/pharmacy/assets/img/client/man-3.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="slider-inner-text">
+                                                <h4>Oliver</h4>
+                                                <p>Oral Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 368.667px; margin-right: 20px;">
+                                    <div class="slider-item">
+                                        <div class="slider-content">
+                                            <i class="">”</i>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                Lorem ipsum
+                                                dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do
+                                                eiusmod Lorem ipsum dolor sit amet, </p>
+                                        </div>
+                                        <div class="slider-info">
+                                            <div class="slider-inner">
+                                                <img src="https://medics.themechampion.com/html/pharmacy/assets/img/client/man-1.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="slider-inner-text">
+                                                <h4>Lucas</h4>
+                                                <p>Oral Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active center" style="width: 368.667px; margin-right: 20px;">
+                                    <div class="slider-item">
+                                        <div class="slider-content">
+                                            <i class="">”</i>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                Lorem ipsum
+                                                dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do
+                                                eiusmod Lorem ipsum dolor sit amet, </p>
+                                        </div>
+                                        <div class="slider-info">
+                                            <div class="slider-inner">
+                                                <img src="https://medics.themechampion.com/html/pharmacy/assets/img/client/man-2.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="slider-inner-text">
+                                                <h4>James Warm</h4>
+                                                <p>Oral Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item active" style="width: 368.667px; margin-right: 20px;">
+                                    <div class="slider-item">
+                                        <div class="slider-content">
+                                            <i class="">”</i>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                Lorem ipsum
+                                                dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do
+                                                eiusmod Lorem ipsum dolor sit amet, </p>
+                                        </div>
+                                        <div class="slider-info">
+                                            <div class="slider-inner">
+                                                <img src="https://medics.themechampion.com/html/pharmacy/assets/img/client/man-3.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="slider-inner-text">
+                                                <h4>Oliver</h4>
+                                                <p>Oral Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 368.667px; margin-right: 20px;">
+                                    <div class="slider-item">
+                                        <div class="slider-content">
+                                            <i class="">”</i>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                Lorem ipsum
+                                                dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do
+                                                eiusmod Lorem ipsum dolor sit amet, </p>
+                                        </div>
+                                        <div class="slider-info">
+                                            <div class="slider-inner">
+                                                <img src="https://medics.themechampion.com/html/pharmacy/assets/img/client/man-1.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="slider-inner-text">
+                                                <h4>Lucas</h4>
+                                                <p>Oral Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 368.667px; margin-right: 20px;">
+                                    <div class="slider-item">
+                                        <div class="slider-content">
+                                            <i class="">”</i>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                Lorem ipsum
+                                                dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do
+                                                eiusmod Lorem ipsum dolor sit amet, </p>
+                                        </div>
+                                        <div class="slider-info">
+                                            <div class="slider-inner">
+                                                <img src="https://medics.themechampion.com/html/pharmacy/assets/img/client/man-2.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="slider-inner-text">
+                                                <h4>James Warm</h4>
+                                                <p>Oral Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="owl-item cloned" style="width: 368.667px; margin-right: 20px;">
+                                    <div class="slider-item">
+                                        <div class="slider-content">
+                                            <i class="">”</i>
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                                Lorem ipsum
+                                                dolor sit amet, Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                                sed do
+                                                eiusmod Lorem ipsum dolor sit amet, </p>
+                                        </div>
+                                        <div class="slider-info">
+                                            <div class="slider-inner">
+                                                <img src="https://medics.themechampion.com/html/pharmacy/assets/img/client/man-3.png"
+                                                    alt="">
+                                            </div>
+                                            <div class="slider-inner-text">
+                                                <h4>Oliver</h4>
+                                                <p>Oral Customer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
+                                    aria-label="Previous">‹</span></button><button type="button" role="presentation"
+                                class="owl-next"><span aria-label="Next">›</span></button></div>
+                        <div class="owl-dots disabled"><button role="button"
+                                class="owl-dot"><span></span></button><button role="button"
+                                class="owl-dot active"><span></span></button><button role="button"
+                                class="owl-dot"><span></span></button></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- </div> -->
+
+<!-- <script src="{% static 'js/reviewCarousel.js' %}"></script>
+<script src="{% static 'js/bootstrap.js' %}"></script>
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script> -->
+{% endblock body %}
