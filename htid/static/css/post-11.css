@@ -482,12 +482,12 @@ body.rtl .elementor-11 .elementor-element.elementor-element-d9b7694 {
 }
 
 .elementor-11 .elementor-element.elementor-element-190a567>.elementor-widget-container {
-    margin: -125px 0px 0px 0px;
-    background-color: var(--e-global-color-dafc007);
+    /* margin: -125px 0px 0px 0px; */
+    /* background-color: var(--e-global-color-dafc007); */
 }
 
 .elementor-11 .elementor-element.elementor-element-11a6a36>.elementor-widget-container {
-    margin: -125px 0px 0px 0px;
+    /* margin: -125px 0px 0px 0px; */
     padding: 0px 25px 0px 0px;
 }
 
