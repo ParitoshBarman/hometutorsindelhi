@@ -17,6 +17,9 @@ urlpatterns = [
     path("contact", views.contact, name='contact'),
     path("service", views.service, name='service'),
     path("teacher", views.teacher, name='teacher'),
+    path("privacypolicy", views.privacypolicy, name='privacypolicy'),
+    path("termsandcondition", views.termsandcondition, name='termsandcondition'),
+    path("pricing", views.pricing, name='pricing'),
 
     path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="django.contrib.sitemaps.views.sitemap"),
 
