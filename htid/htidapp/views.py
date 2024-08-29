@@ -17,6 +17,8 @@ def termsandcondition(request):
     return render(request, "termsandcondition.html")
 def pricing(request):
     return render(request, "pricing.html")
+def classes(request):
+    return render(request, "class.html")
 
 
 
