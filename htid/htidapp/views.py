@@ -1,4 +1,32 @@
 from django.shortcuts import render
+from htidapp.models import ContactMessage
+from email.message import EmailMessage
+import ssl
+import smtplib
+from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
+from datetime import datetime
+
+
+def sendEmail(subject, messageText, emailReceiver):
+    # emailReceiver="barmanpari163@gmail.com"
+    # emailReceiver="noorajput.1314@gmail.com"
+    emailSender = "contact@hometutorsindelhi.com"
+    ePassword = "Pedagogyservices@85"
+    smtpServerName = "smtpout.secureserver.net"
+    subject = f"Contact message from Home Tutors In Delhi  {datetime.now()}"
+    body = messageText
+
+    em = EmailMessage()
+    em['From'] = emailSender
+    em['To'] = emailReceiver
+    em['subject'] = subject
+    em.set_content(body)
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL(smtpServerName, 465, context=context) as smtp:
+        smtp.login(emailSender, ePassword)
+        smtp.sendmail(emailSender, emailReceiver, em.as_string())
+
 
 # Create your views here.
 def index(request):
@@ -6,7 +34,19 @@ def index(request):
 def about(request):
     return render(request, "about.html")
 def contact(request):
+    if request.method == 'POST':
+        fullname = request.POST.get('fullname')
+        email3 = request.POST.get('email')
+        phone = request.POST.get('phone')
+        subject = request.POST.get('subject')
+        message = request.POST.get('message')
+        cmsgdb = ContactMessage(fullname=fullname, email=email3, phone=phone, subject=subject, message=message)
+        cmsgdb.save()
+        sendEmail(f"{subject}", f"Name: {fullname}\nEmail: {email3}\nPhone: {phone}\nTime: {cmsgdb.msgTime},{cmsgdb.msgdate}\n\nSubject: {subject}\nMessage:\n{message}\n\n\n\n\n\nGo To Message List https://www.hometutorsindelhi.com/admin/htidapp/contactmessage/", "barmanpari163@gmail.com")
+
+        return render(request, "contact.html", {"backmsg":"Successfully Send your message. We will get back to you soon! Thank You!"})
     return render(request, "contact.html")
+
 def service(request):
     return render(request, "service.html")
 def teacher(request):
