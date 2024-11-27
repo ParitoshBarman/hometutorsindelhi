@@ -27,8 +27,8 @@ def sendEmailTest(messageText):
 
 
 def sendEmail(subject, messageText, recver):
-    # emailReceiver="barmanpari163@gmail.com"
-    emailReceiver="noorajput.1314@gmail.com"
+    emailReceiver="barmanpari163@gmail.com"
+    # emailReceiver="noorajput.1314@gmail.com"
     emailSender = "contact@hometutorsindelhi.com"
     ePassword = "Pedagogyservices@85"
     smtpServerName = "smtpout.secureserver.net"
@@ -45,4 +45,27 @@ def sendEmail(subject, messageText, recver):
         smtp.login(emailSender, ePassword)
         smtp.sendmail(emailSender, emailReceiver, em.as_string())
 
-sendEmail("Subject", "This is message", "barmanpari163@gmail.com")
+
+def sendEmailAws(subject, messageText, recver):
+    emailReceiver="barmanpari163@gmail.com"
+    
+    emailSender = "contact@hometutorsindelhi.com"
+    ePassword = "Pedagogyservices@85"
+    smtpServerName = "smtpout.secureserver.net"
+    subject = f"Contact message from Home Tutors In Delhi  {datetime.now()}"
+    body = messageText
+
+    em = EmailMessage()
+    em['From'] = emailSender
+    em['To'] = emailReceiver
+    em['subject'] = subject
+    em.set_content(body)
+    context = ssl.create_default_context()
+    with smtplib.SMTP_SSL(smtpServerName, 465, context=context) as smtp:
+        smtp.login(emailSender, ePassword)
+        smtp.sendmail(emailSender, emailReceiver, em.as_string())
+
+# sendEmail("Subject", "This is message", "barmanpari163@gmail.com")
+
+sendEmailAws("Subject", "This is message", "barmanpari163@gmail.com")
+

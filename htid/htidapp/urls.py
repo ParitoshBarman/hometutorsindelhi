@@ -21,6 +21,7 @@ urlpatterns = [
     path("termsandcondition", views.termsandcondition, name='termsandcondition'),
     path("pricing", views.pricing, name='pricing'),
     path("classes", views.classes, name='classes'),
+    path("webhook", views.webhook, name='webhook'),
 
     path("sitemap.xml", sitemap, {"sitemaps": sitemaps}, name="django.contrib.sitemaps.views.sitemap"),
 
